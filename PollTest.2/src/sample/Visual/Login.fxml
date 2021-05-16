@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #4d0000; -fx-border-width: 5; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.Controller">
+   <children>
+      <HBox alignment="CENTER" layoutX="5.0" layoutY="330.0" prefHeight="70.0" prefWidth="400.0" style="-fx-border-color: #000000; -fx-border-width: 5;" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="-5.0">
+         <children>
+            <Button fx:id="ButLogin" mnemonicParsing="false" onAction="#LoginPanelShow" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #ff5e00;" text="Вход" textAlignment="CENTER" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="ButRegistr" mnemonicParsing="false" onAction="#RegistPanelShow" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #632500;" text="Регистрация" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="APLogin" prefHeight="330.0" prefWidth="400.0" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <PasswordField fx:id="LogPass" alignment="CENTER" layoutX="46.0" layoutY="193.0" prefHeight="35.0" prefWidth="300.0" promptText="Введите пароль" style="-fx-border-color: #000000; -fx-border-width: 4;" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="44.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="LogMailLog" alignment="CENTER" layoutX="46.0" layoutY="149.0" prefHeight="35.0" prefWidth="300.0" promptText="Введите почту или логин" style="-fx-border-color: #000000; -fx-border-width: 4;" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="44.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="LogMsg" alignment="CENTER" contentDisplay="CENTER" layoutY="230.0" prefHeight="27.0" prefWidth="390.0" textAlignment="CENTER" textFill="WHITE" />
+            <Label fx:id="LogResPass" layoutX="245.0" layoutY="301.0" text="Восстановить пароль" textFill="WHITE" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="132.0" fitWidth="137.0" layoutX="130.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="128.0">
+               <image>
+                  <Image url="@../Image/User.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="LogButEnter" layoutX="158.0" layoutY="262.0" mnemonicParsing="false" onAction="#Login" style="-fx-background-color: #ff5e00;" text="Войти" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="APRegistr" layoutY="10.0" prefHeight="330.0" prefWidth="400.0" visible="false">
+         <children>
+            <PasswordField fx:id="RegPass" alignment="CENTER" layoutX="45.0" layoutY="127.0" prefHeight="35.0" prefWidth="300.0" promptText="Введите пароль" style="-fx-border-color: #000000; -fx-border-width: 4;" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="RegMail" alignment="CENTER" layoutX="45.0" layoutY="21.0" prefHeight="35.0" prefWidth="300.0" promptText="Введите почту" style="-fx-border-color: #000000; -fx-border-width: 4;" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="RegMsg" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="223.0" prefHeight="27.0" prefWidth="351.0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="RegLogin" alignment="CENTER" layoutX="45.0" layoutY="73.0" prefHeight="35.0" prefWidth="300.0" promptText="Введите логин" style="-fx-border-color: #000000; -fx-border-width: 4;" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="RegPass2" alignment="CENTER" layoutX="45.0" layoutY="177.0" prefHeight="35.0" prefWidth="300.0" promptText="Повторите пароль" style="-fx-border-color: #000000; -fx-border-width: 4;" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="RegButRegist" layoutX="105.0" layoutY="258.0" mnemonicParsing="false" onAction="#Registration" style="-fx-background-color: #ff5e00;" text="Зарегистрироваться" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
