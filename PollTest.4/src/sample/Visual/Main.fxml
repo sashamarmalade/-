@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="APMain" focusTraversable="true" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.Controller">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="153.0" style="-fx-border-color: #000000; -fx-border-width: 5; -fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="5.0" layoutY="5.0" prefHeight="600.0" prefWidth="150.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="IVThemeView" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#IVThemeShow" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Image/in.png" />
+                     </image></ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+      <AnchorPane fx:id="APTheme" layoutX="150.0" prefHeight="600.0" prefWidth="650.0" style="-fx-border-color: #000000; -fx-border-width: 2; -fx-background-color: #ffffff;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextArea fx:id="TAFindTheme" layoutX="76.0" layoutY="15.0" prefHeight="46.0" prefWidth="563.0" promptText="Введите тему или номер для поиска" wrapText="true" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="20.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <VBox fx:id="VBListTheme" alignment="TOP_CENTER" layoutX="4.0" layoutY="74.0" prefHeight="528.0" prefWidth="646.0" spacing="20.0" style="-fx-border-color: #000000; -fx-border-width: 3; -fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+               <padding>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+               </padding>
+            </VBox>
+            <Label layoutX="14.0" layoutY="26.0" prefWidth="74.0" text="Поиск" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="570.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
