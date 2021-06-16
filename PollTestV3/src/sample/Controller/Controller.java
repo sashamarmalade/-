@@ -381,8 +381,8 @@ public class Controller implements Initializable {
                         Nu++;
                     }
                     Nu = 0;
-                    for (int i = 0; i < buttons.size() / 2; i++)
-                        for (int j = buttons.size() / 2; j < buttons.size(); j++) {
+                    for (int i = 1; Nu < buttons.size(); i++)
+                        for (int j = 1 ; j <= 2 && Nu < buttons.size(); j++) {
                             GridRadio.add(buttons.get(Nu), i, j);
                             Nu++;
                         }
@@ -401,8 +401,8 @@ public class Controller implements Initializable {
                         Nu++;
                     }
                     Nu = 0;
-                    for (int i = 0; i < check.size() / 2; i++)
-                        for (int j = check.size() / 2; j < check.size(); j++) {
+                    for (int i = 1; Nu < check.size(); i++)
+                        for (int j = 1 ; j <= 2 && Nu < check.size(); j++) {
                             GridRadio.add(check.get(Nu), i, j);
                             Nu++;
                         }
